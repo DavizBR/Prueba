@@ -1,0 +1,121 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - grax
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_pokemon
+  - fire
+  - water
+  - grass
+  - affirm_fire
+  - affirm_grass
+  - affirm_water
+  - deny_fire
+  - deny_water
+  - deny_grass
+  - charmander_dex
+  - squirtle_dex
+  - bulbasaur_dex
+  - give_time
+  - credit_account
+  - my_account_number
+  - suscribirse
+  - correo
+  - teléfono
+
+entities:
+  - account
+  - account_number
+  - email
+  - phone
+
+
+actions:
+  - action_show_time
+
+responses:
+  utter_greet:
+  - text: "¡Hola!¿Qué tal?"
+
+  utter_cheer_up:
+  - text: "Mira el lado bueno, al menos tienes salud"
+
+  utter_did_that_help:
+  - text: "¿Te he ayudado?"
+
+  utter_happy:
+  - text: "Me alegro :)"
+
+  utter_goodbye:
+  - text: "¡Adiós!"
+
+  utter_iamabot:
+  - text: "... Rotom-tom"
+
+  utter_ask_pokemon:
+  - text: "¿Qué tipo te gusta más? Fuego, agua o planta"
+
+  utter_fire:
+  - text: "¿Y te gustaría surcar el cielo a lomos de un gran dragón? ¿O prefieres quedarte en tierra?"
+
+  utter_water:
+  - text: "¿Y te gustaría surcar los mares sobre un robusto caparazón? ¿O le temes al mar?"
+
+  utter_grass:
+  - text: "¿Y te gustaría entrenar a un Pokémon venenoso? ¿O prefieres uno inofensivo?"
+
+  utter_affirm_fire:
+  - text: "Tu Pokémon ideal es... ¡Charmander!"
+  
+  utter_deny_fire:
+  - text: "En ese caso, Charmander no es la mejor opción."
+
+  utter_affirm_water:
+  - text: "Tu Pokémon ideal es... ¡Squirtle!"
+  
+  utter_deny_water:
+  - text: "En ese caso, Squirtle no es la mejor opción."
+
+  utter_affirm_grass:
+  - text: "Tu Pokémon ideal es... ¡Bulbasaur!"
+
+  utter_deny_grass:
+  - text: "En ese caso, Bulbasaur no es la mejor opción."
+
+  utter_grax:
+  - text: "¡Ha sido un placer! Si necesitas saber algo más, dímelo."
+
+  utter_charmander_dex:
+  - text: "Charmander, Pokémon lagartija. La llama que tiene en la punta de la cola arde según sus sentimientos. Llamea levemente cuando está alegre y arde vigorosamente cuando está enfadado."
+
+  utter_squirtle_dex:
+  - text: "Squirtle, Pokémon tortuguita. El caparazón de Squirtle no solo lo protege; su forma redondeada y sus hendiduras reducen su resistencia al agua y lo permiten nadar más rápido."
+
+  utter_bulbasaur_dex:
+  - text: "Bulbasaur, Pokémon semilla. A Bulbasaur es fácil verle echándose una siesta al sol. La semilla que tiene en el lomo va creciendo cada vez más a medida que absorbe los rayos del sol."
+
+  utter_credit_account:
+  - text: "¿Cuál es tu número de cuenta?"
+
+  utter_my_account_number:
+  - text: "Tu saldo es de 3 euros."
+
+  utter_suscribirse:
+  - text: "¿Cuál es tu correo?"
+
+  utter_correo:
+  - text: "Muchas gracias. Tu correo electrónico ha sido registrado correctamente. ¿Cuál es su número de teléfono?"
+
+  utter_telefono:
+  - text: "Muchas gracias. Su suscripción ha sido completada con éxito. En unos instantes recibirá el correo de confirmación y un SMS con el código de acceso."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

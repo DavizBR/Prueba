@@ -1,0 +1,364 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hola
+    - buenas
+    - hola buenas
+    - buenos días
+    - buenas tardes
+    - qué pasa
+    - holi
+    - hello
+    - saludos
+    - te saludo
+    - bonjour
+    - buen día
+
+- intent: goodbye
+  examples: |
+    - adiós
+    - nos vemos
+    - hasta luego
+    - buenas noches
+    - chao
+    - hasta la vista
+    - que tengas un buen día
+    - agur
+    - con Dios
+    - me voy
+
+- intent: grax
+  examples: |
+    - gracias
+    - Gracias
+    - grax
+    - thanx
+    - thank you
+    - merci
+    - graciaas
+    - graciaaas
+    - muchas gracias
+    - agradecido
+    - gracias por tu ayuda
+    - muchas gracias por tu ayuda
+
+- intent: mood_great
+  examples: |
+    - perfecto
+    - genial
+    - increíble
+    - me siento genial
+    - maravilloso
+    - me siento muy bien
+    - estoy perfecto
+    - estoy genial
+    - en la flor de la vida
+    - good
+    - guay
+    - de diez
+    - muy bien
+    - bien
+
+- intent: mood_unhappy
+  examples: |
+    - he tenido un día horrible
+    - estoy triste
+    - no me encuentro bien
+    - estoy decepcionado
+    - decepcionado
+    - blue
+    - tristísimo
+    - estoy muy triste
+    - triste
+    - muy triste
+    - fatal
+    - no muy bien
+    - nada bien
+    - en depresión
+    - horrible
+
+- intent: bot_challenge
+  examples: |
+    - eres un bot?
+    - eres humano?
+    - estoy hablando con un bot?
+    - estoy hablando con un humano?
+    - eres un pokémon?
+    - estoy hablando con un pokémon?
+    - eres un pokemon?
+    - eres un Pokémon?
+
+- intent: ask_pokemon
+  examples: |
+    - dime un pokemon
+    - dime un pokémon
+    - dime un Pokémon
+    - asigname un pokemon
+    - necesito un pokemon
+    - necesito un pokémon
+    - qué pokemon me recomiendas?
+    - qué pokémon me recomiendas?
+    - cual sería mi compañero pokemon?
+    - con qué pokemon me llevaría bien?
+    - quiero un pokemon
+    - quiero un pokémon
+    - dame un pokemon
+    - dame un pokémon
+    - qué pokemon tienes?
+    - ayudame a elegir mi pokemon
+
+- intent: fire
+  examples: |
+    - Fuego
+    - fuego
+    - tipo fuego
+    - el tipo fuego
+    - el fuego
+
+- intent: water
+  examples: |
+    - Agua
+    - agua
+    - tipo agua
+    - el tipo agua
+    - el agua
+
+- intent: grass
+  examples: |
+    - Planta
+    - planta
+    - tipo planta
+    - el tipo planta
+    - el planta
+
+
+- intent: affirm_fire
+  examples: |
+    - Sí, quiero surcar los cielos sobre un pokemon dragon.
+    - Me gustaría volar
+    - Volar
+    - Surcar los cielos
+    - El dragón
+    - montar a dragón
+    - montar en un dragón
+    - quiero surcar los cielos
+    - quiero surcar el cielo
+    - surcar el cielo
+    - el pokemon dragón
+
+- intent: affirm_water
+  examples: |
+    - Sí, me gustaría cruzar los mares sobre un robusto caparazón
+    - Me gusta navegar
+    - me gusta el mar
+    - el mar
+    - los mares
+    - las olas
+    - surcar el mar
+    - cruzar el mar
+    - cruzar los mares
+    - el caparazón
+    - el robusto caparazón
+
+- intent: affirm_grass
+  examples: |
+    - Sí, quiero un pokemon venenoso
+    - venenoso
+    - me gusta el veneno
+    - me gusta el tipo veneno
+    - no me gustan inofensivos
+    - me gustan los pokemon peligrosos
+    - veneno
+    - tipo veneno
+    - quiero un pokemon venenoso
+    - quiero un pokemon de veneno
+    - quiero un pokemon de tipo veneno
+
+- intent: deny_fire
+  examples: |
+    - No me gustan las alturas
+    - prefiero quedarme en tierra
+    - tierra
+    - el suelo
+    - suelo
+    - prefiero quedarme en el suelo
+    - no me gusta volar
+    - volar me marea
+    - no me gustan los dragones
+    - me da miedo volar
+    - no quiero volar
+
+
+- intent: deny_water
+  examples: |
+    - No me gusta el mar
+    - no quiero cruzar el mar
+    - no quiero cruzar los mares
+    - le temo al mar
+    - el mar me da miedo
+    - me da miedo el mar
+
+- intent: deny_grass
+  examples: |
+    - No me gusta el tipo veneno
+    - no me gusta el veneno
+    - no me gustan los venenosos
+    - inofensivo
+    - me gustan los inofensivos
+    - me gustan los pokemon inofensivos
+    - prefiero los inofensivos
+    - prefiero los pokemon inofensivos
+    - uno inofensivo
+    - los inofensivos
+
+- intent: affirm
+  examples: |
+    - Sí
+    - sí
+    - si
+    - me encantaría
+    - sí, me encantaría
+    - por supuesto
+    - suena bien
+    - suena muy bien
+    - me encanta la idea
+    - suena guay
+    - claro
+    - claro que sí
+    - obvio
+    - evidentemente
+    - a quién no?
+    - es mi sueño
+    - muero por ello
+
+- intent: deny
+  examples: |
+    - No
+    - no
+    - no me gusta la idea
+    - no, tengo vértigo
+    - no, me da miedo el mar
+    - no, no me gusta el veneno
+    - para nada
+    - en absoluto
+    - suena horrible
+    - qué horror
+    - qué miedo
+    - no creo
+    - no lo creo
+    - paso
+    - he cambiado de idea
+
+- intent: charmander_dex
+  examples: |
+    - Hablame de charmander
+    - dime la descripción de charmander
+    - dime la descripción de la pokedex de charmander
+    - dime algo de charmander
+    - leeme la descripción de charmander
+    - qué dice la pokedex de charmander?
+    - cuéntame algo de charmander
+    - quiero saber más sobre charmander
+    - dime alguna curiosidad de charmander
+
+- intent: squirtle_dex
+  examples: |
+    - Hablame de squirtle
+    - dime la descripción de squirtle
+    - dime la descripción de la pokedex de squirtle
+    - dime algo de squirtle
+    - leeme la descripción de squirtle
+    - qué dice la pokedex de squirtle?
+    - cuéntame algo de squirtle
+    - quiero saber más sobre squirtle
+    - dime alguna curiosidad de squirtle
+
+- intent: bulbasaur_dex
+  examples: |
+    - Hablame de bulbasaur
+    - dime la descripción de bulbasaur
+    - dime la descripción de la pokedex de bulbasaur
+    - dime algo de bulbasaur
+    - leeme la descripción de bulbasaur
+    - qué dice la pokedex de bulbasaur?
+    - cuéntame algo de bulbasaur
+    - quiero saber más sobre bulbasaur
+    - dime alguna curiosidad de bulbasaur
+
+- intent: give_time
+  examples: |
+    - ¿Qué hora es?
+    - que hora es
+    - qué hora es?
+    - dame la hora
+    - dime la hora
+    - en qué hora vivo
+    - qué hora es
+    - reloj
+    - modo reloj
+    - tienes hora?
+    - tienes hora
+    - hora
+    - la hora
+
+- intent: credit_account
+  examples: |
+    - Quiero ver mi [crédito]{"entity": "account"}
+    - Dime mi [saldo]{"entity": "account"}
+    - Enséñame mi [cuenta]{"entity": "account"}
+
+- intent: my_account_number
+  examples: |
+    - mi número de cuenta es [7987256341]{"entity": "account_number"}
+    - [7987456321]{"entity": "account_number"}
+    - aquí está mi número de cuenta [7123456789]{"entity": "account_number"}
+
+- intent: suscribirse
+  examples: |
+    - Quiero suscribirme
+    - Suscribirse
+    - Suscribirme
+    - Quiero una suscrpción
+    - Suscripción
+
+- intent: correo
+  examples: |
+    - Mi correo es [davidbrhp@gmail.com]{"entity": "email"}
+    - Es [dbeamont@gmail.com]{"entity": "email"}
+    - Este [davidbeamonterueda@gmail.com]{"entity": "email"}
+    - [davidnphlbt@gmail.com]{"entity": "email"}
+
+- intent: teléfono
+  examples: |
+    - Mi número de teléfono es [663991469]{"entity": "phone"}
+    - Mi número es [976436587]{"entity": "phone"}
+    - Mi teléfono es [682057312]{"entity": "phone"}
+    - [765432187]{"entity": "phone"}
+    - Es [674930745]{"entity": "phone"}
+    - El [629001574]{"entity": "phone"}
+
+- regex: email
+  examples: |
+    - \b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b
+
+- regex: account_number
+  examples: |
+    - \d{10,12}
+    - ^7\d{10,12}
+
+- regex: phone
+  examples: |
+    - ^\d{9}$
+
+
+- synonym: Pokémon
+  examples: |
+    - Pokemon
+    - pokemon
+    - pokémon
+    - pokemons
+    - pokémons
+    - poke
