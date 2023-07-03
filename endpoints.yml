@@ -17,10 +17,6 @@
   # you don't need to provide anything here - this channel doesn't
   # require any credentials
 
-endpoints:
-  webhook:
-    url: "https://chatbot-dex.vercel.app/webhook"
-
  # tracker_store: # Endpoint para almacenar el estado del tracker
   #  type: "SQL" # Tipo de tracker store, en este ejemplo se utiliza SQL
  #   dialect: "sqlite" # Dialecto de la base de datos
@@ -28,7 +24,7 @@ endpoints:
 
 
 action_endpoint:
-  url: "https://chatbot-dex.vercel.app/webhook"
+  url: "'http://localhost:5055'"
 
 #endpoints:
   #webhook:
