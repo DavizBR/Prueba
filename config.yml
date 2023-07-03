@@ -25,10 +25,6 @@ pipeline:
   epochs: 100
   entity_recognition: true
   constrain_similarities: true
-- name: EntitySynonymMapper
-   #- name: ResponseSelector
-    #  epochs: 100
-     constrain_similarities: true
 #   - name: FallbackClassifier
    #- name: RegexEntityExtractor
      #case_sensitive: False

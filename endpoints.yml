@@ -22,9 +22,8 @@
  #   dialect: "sqlite" # Dialecto de la base de datos
  #   url: "sqlite:///path/to/database.db" # URL de la base de datos SQLite
 
-
 action_endpoint:
-  url: "'http://localhost:5055'"
+  url: "http://localhost:5055/webhook"
 
 #endpoints:
   #webhook:
