@@ -25,6 +25,9 @@
 action_endpoint:
   url: "http://localhost:5055/webhook"
 
+webhook:
+  url: "http://localhost:5005/webhook"  # Asegúrate de que la URL coincida con la utilizada en tu código JavaScript
+  token: "zkjaeIyWVAk3j42YRHPqdYGa"
 #endpoints:
   #webhook:
     #url: "https://chatbot-dex.vercel.app/webhooks/rest/webhook"
