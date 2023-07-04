@@ -4,7 +4,7 @@
 
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
-language: es
+language: en
 
 
 

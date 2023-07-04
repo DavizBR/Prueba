@@ -1,6 +1,5 @@
 version: "3.1"
 
-nlu:
 - intent: greet
   examples: |
     - hey
@@ -31,7 +30,7 @@ nlu:
     - me voy
 
  - intent: grax
-  examples: |
+   examples: |
     - Gracias
     - Muchas gracias
     - Agradecido
